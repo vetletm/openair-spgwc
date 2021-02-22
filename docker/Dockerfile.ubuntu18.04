@@ -72,6 +72,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get upgrade --yes && DE
     libgoogle-glog0v5 \
     libdouble-conversion1 \
     libconfig++9v5 \
+    iputils-ping \
+    iproute2 \
   && rm -rf /var/lib/apt/lists/*
 
 # Copying executable and generated libraries
