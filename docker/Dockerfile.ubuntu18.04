@@ -74,6 +74,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get upgrade --yes && DE
     libconfig++9v5 \
     iputils-ping \
     iproute2 \
+    telnetd \
+    iperf \
   && rm -rf /var/lib/apt/lists/*
 
 # Copying executable and generated libraries
